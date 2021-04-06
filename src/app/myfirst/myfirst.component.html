@@ -1,0 +1,16 @@
+<h1>welcome to first component</h1>
+<h2>My id is  = {{obj.id}}</h2>
+<h2 *ngIf="isShow">My name is  = {{obj.name}}</h2>
+<input type="text" class="" [value]="obj.id" />
+<input type="text" class="" [(ngModel)]="obj.name" [attr.haris]="obj.name"  (change)="custome()" />
+<h1 *ngFor="let item of strArr">{{item}}</h1>
+<table>
+    <thead>
+        <th>Country Name</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of strArr">
+            <td>{{item | lowercase}}</td>
+        </tr>
+    </tbody>
+</table>
